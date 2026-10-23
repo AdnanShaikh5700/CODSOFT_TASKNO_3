@@ -22,5 +22,5 @@ class BookViewSet(viewsets.ModelViewSet):
   ]
 
   filterset_fields = ["author", "category"]
-  search_fields = ["title", "isbn", "author"]  
+  search_fields = ["title", "isbn", "author__name"]  
   ordering_fields = ["title", "id", "total_copies"]
